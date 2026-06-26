@@ -10,7 +10,7 @@ import streamlit as st
 from preprocessing import build_full_text
 from samples import SAMPLES
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(__file__).parent.resolve()
 MODELS_DIR = PROJECT_ROOT / "Output" 
 BERT_DIR = MODELS_DIR / "distilbert-best"
 BERT_AVAILABLE = (BERT_DIR / "model.safetensors").exists()

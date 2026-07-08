@@ -145,8 +145,47 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-st.title("📰 Fake News Detection System")
-st.caption("CST-3121 Group Project")
+
+col1, col2 = st.columns([0.7, 5])
+st.markdown(
+    """
+    <style>
+        .logo-container [data-testid="stImage"] img {
+            border-radius: 50%;
+            object-fit: cover;
+            width: 45px !important;
+            height: 45px !important;
+        }
+        
+        
+        .logo-container [data-testid="stImage"] {
+            padding: 3px 0; 
+            display: flex;
+            align-items: center;
+        }
+    </style>
+    
+    """,
+    unsafe_allow_html=True
+)
+with col1:
+    st.markdown('<div class="logo-container">', unsafe_allow_html=True)
+    st.image("assets/AIGPpfp.jpg")
+    st.markdown('</div>', unsafe_allow_html=True)
+
+with col2:
+    st.title("Fake News Detection System")
+    st.markdown("""
+    
+
+    By The Truth Lens
+
+    
+    """)
+
+
+
+# st.caption("CST-3121 AI Group Project")
 st.write("---")
 
 vectorizer, classical_models = load_classical_artifacts()
@@ -363,11 +402,11 @@ with tab3:
     """)
 
     st.markdown("""
-    ### 1️⃣ Input News
+    ### 1. Input News
 
     Paste the news article or headline into the Detection page.
 
-    ### 2️⃣ Text Preprocessing
+    ### 2. Text Preprocessing
 
     The text is cleaned by:
     - converting to lowercase
@@ -375,17 +414,17 @@ with tab3:
     - removing stop words
     - lemmatization
 
-    ### 3️⃣ Feature Extraction
+    ### 3. Feature Extraction
 
     The cleaned text is transformed into numerical vectors using
     **TF-IDF Vectorization**.
 
-    ### 4️⃣ Machine Learning Prediction
+    ### 4. Machine Learning Prediction
 
     The selected Machine Learning model analyzes the feature vector and predicts
     whether the article is **Real** or **Fake**.
 
-    ### 5️⃣ Display Result
+    ### 5. Display Result
 
     The application displays:
     - Prediction (Real/Fake)

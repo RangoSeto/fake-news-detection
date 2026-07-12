@@ -1,4 +1,4 @@
-# 📰 Fake News Detection System
+# Fake News Detection System
 
 An AI-powered Fake News Detection System that classifies news articles as **Real** or **Fake** using Natural Language Processing (NLP) and Machine Learning techniques.
 
@@ -206,16 +206,17 @@ The application will open in your browser.
 
 Developed as an Artificial Intelligence course project.
 
-Team Name : *** The Truth Lens ***
+Team Name : **The Truth Lens**
+<br>
 Team Members:
-Mae Nwe
-Fixed
-Aura
-Rango
-Izel
-Mya Ei
-Oak Kar
-Serenity
+- Mae Nwe
+- Fixed
+- Aura
+- Rango
+- Izel
+- Mya Ei
+- Oak Kar
+- Serenity
 
 
 ---

@@ -24,8 +24,8 @@ CLASSICAL_MODELS = {
 }
 
 MODEL_METRICS = {
-    "Logistic Regression": {"accuracy": 0.932, "f1": 0.932, "split": "test"},
-    "Random forest": {"accuracy": 0.906, "f1": 0.906, "split": "validation"},
+    "Logistic Regression": {"accuracy": 0.9074, "f1": 0.9083, "split": "test"},
+    "Random forest": {"accuracy": 0.9277, "f1": 0.9275, "split": "validation"},
     DISTILBERT_LABEL: {"accuracy": 0.968, "f1": 0.968, "split": "test"},
 }
 
@@ -266,7 +266,7 @@ with tab2:
     metrics = MODEL_METRICS[selected_model]
     st.caption(
         f"**Engine Configuration:** {selected_model} | "
-        f"**Baseline Metric:** {metrics['accuracy']:.1%} accuracy ({metrics['split']} set)"
+        f"**Baseline Metric:** {metrics['accuracy']:.1%} accuracy "
     )
 
     sample_choice = st.selectbox("Try a sample article", list(SAMPLES.keys()))
